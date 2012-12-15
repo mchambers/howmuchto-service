@@ -21,6 +21,5 @@ C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Release
 C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Release\ServiceStack.Interfaces.xml
 C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Release\ServiceStack.Redis.xml
 C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Release\ServiceStack.Text.xml
-C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\obj\Release\DMTDataRepositories.csprojResolveAssemblyReference.cache
 C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\obj\Release\HMTDataRepositories.dll
 C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\obj\Release\HMTDataRepositories.pdb
