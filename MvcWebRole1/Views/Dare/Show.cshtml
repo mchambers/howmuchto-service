@@ -1,0 +1,120 @@
+﻿@model DareyaAPI.Models.Challenge
+
+@{
+    ViewBag.Title = "dareme.to - " + Model.Description;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string targetFirstName;
+
+    if (Model.TargetCustomer != null && Model.TargetCustomer.FirstName!=null && !Model.TargetCustomer.FirstName.Equals(""))
+    {
+        targetFirstName = Model.TargetCustomer.FirstName;
+    }
+    else
+    {
+        targetFirstName = "Someone";
+    }
+
+    string bidderDescString;
+    bool plural;
+    
+    if(Model.NumberOfBidders>2)
+    {
+        bidderDescString="<strong>"+Model.Customer.FirstName+"</strong> and "+(Model.NumberOfBidders - 1).ToString()+" others";
+        plural = false;
+    }
+    else if(Model.NumberOfBidders==2)
+    {
+        bidderDescString = Model.Customer.FirstName + " and 1 other";
+        plural = false;
+    }
+    else
+    {
+        bidderDescString = Model.Customer.FirstName;
+        plural = true;
+    }
+}
+
+	<div id="left">
+		<div class="sectionHeader">Latest Dares</div>
+		
+	</div>
+
+<div id="content">
+	<div class="sectionHeader">@{if (Model.TargetCustomer != null)
+                              {
+                                  @("This dare is open for " + Model.TargetCustomer.FirstName)   
+                              }
+                              else
+                              {
+                                  @("This dare is open for anyone")
+                              }
+                              }</div>
+	
+	<div id="top">
+		<img id="avatar" src="@Model.Customer.AvatarURL" />
+		<div id="bountycallout">@{
+        if(plural)
+        {
+            @(bidderDescString + " has put up")
+        }
+        else
+        {
+            @(bidderDescString + " have put up")
+        }
+      }</div>
+		<div id="bounty">$@(Model.CurrentBid.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture))</div>
+	</div>
+	
+	<div id="darecontainer">
+		<p id="daretext">
+        @(Model.Description)
+	    </p>
+	</div>
+
+    
+	<div class="sectionHeader">Ready to take this dare?</div>
+
+    @{
+        if (Model.TargetCustomer != null)
+        {
+	        <h4>This dare is only for @(Model.TargetCustomer.FirstName).</h4>
+
+            switch (Model.TargetCustomer.ForeignUserType)
+            {
+                case (int)DareyaAPI.Models.Customer.ForeignUserTypes.Facebook:
+                    <p>Is that you? Authenticate with Facebook and get started.</p>
+                    <p>@Html.ActionLink("Authenticate with Facebook", "AuthorizeFacebook", "Onboard")</p>
+                  break;
+                case (int)DareyaAPI.Models.Customer.ForeignUserTypes.Twitter:
+                    <p>Is that you? Authenticate with Twitter and get started.</p>
+                    <p>@Html.ActionLink("Authenticate with Twitter", "AuthorizeTwitter", "Onboard")</p>
+                  break;
+            }
+            
+            <p>Already connected with <em>dareme.to</em>? Accept this dare in the <em>dareme.to</em> app on your iPhone.</p>
+        }
+        else
+        {
+            <p>Create a <em>dareme.to</em> account in seconds and take your shot at earning $@(Model.CurrentBid.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture)).</p>
+            using (Html.BeginForm("Signup", "Onboard"))
+            {
+                <input type="hidden" name="ChallengeID" value="@(Model.ID)" />
+                
+                <label for="FirstName">First Name:</label>
+			    <input type="text" name="FirstName" />
+			    <label for="LastName">Last Name:</label>
+			    <input type="text" name="LastName" />
+			    <label for="EmailAddress">Email Address:</label>
+			    <input type="text" name="EmailAddress" />
+			    <label for="Password">Desired Password:</label>
+			    <input type="password" name="Password" />
+			    
+			    <input class="btn btn-success" type="submit" value="Sign Up" />
+            }
+        }
+        }
+
+</div>
+
+	

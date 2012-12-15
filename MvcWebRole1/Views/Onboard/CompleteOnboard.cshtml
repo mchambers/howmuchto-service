@@ -1,0 +1,29 @@
+﻿@model DareyaAPI.Models.OnboardToken
+
+@{
+    ViewBag.Title = "Complete Signup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Complete Signup</h2>
+
+<p>Great, we'll just need your name, email address and a password.</p>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+
+@using (Html.BeginForm("Complete", "Onboard"))
+{
+    @Html.HiddenFor(model => model.VerificationString)
+                
+    <label for="FirstName">First Name:</label>
+	<input type="text" name="FirstName" />
+	<label for="LastName">Last Name:</label>
+	<input type="text" name="LastName" />
+	<label for="EmailAddress">Email Address:</label>
+	<input type="text" name="EmailAddress" />
+	<label for="Password">Desired Password:</label>
+	<input type="password" name="Password" />
+			    
+	<input class="btn btn-success" type="submit" value="Complete" />
+}
