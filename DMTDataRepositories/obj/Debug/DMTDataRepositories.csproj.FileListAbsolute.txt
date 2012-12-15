@@ -45,3 +45,29 @@ C:\Users\Marc\documents\visual studio 2012\Projects\HowMuchTo\DMTDataRepositorie
 C:\Users\Marc\documents\visual studio 2012\Projects\HowMuchTo\DMTDataRepositories\bin\Debug\ServiceStack.Text.xml
 C:\Users\Marc\documents\visual studio 2012\Projects\HowMuchTo\DMTDataRepositories\obj\Debug\HMTDataRepositories.dll
 C:\Users\Marc\documents\visual studio 2012\Projects\HowMuchTo\DMTDataRepositories\obj\Debug\HMTDataRepositories.pdb
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\HMTDataRepositories.dll.config
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\HMTDataRepositories.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\HMTDataRepositories.pdb
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\AutoMapper.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\Dapper.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\RestSharp.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\ServiceStack.Common.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\ServiceStack.Redis.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\ServiceStack.Text.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\Stripe.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\AutoMapper.xml
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\Dapper.pdb
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\Dapper.xml
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\RestSharp.xml
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\ServiceStack.Common.xml
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\ServiceStack.Interfaces.xml
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\ServiceStack.Redis.xml
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Debug\ServiceStack.Text.xml
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\obj\Debug\DMTDataRepositories.csprojResolveAssemblyReference.cache
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\obj\Debug\HMTDataRepositories.dll
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\obj\Debug\HMTDataRepositories.pdb
