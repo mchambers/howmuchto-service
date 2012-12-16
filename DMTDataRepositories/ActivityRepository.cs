@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.WindowsAzure;
-using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.WindowsAzure.StorageClient;
 using System.Data.Services.Client;
 using ServiceStack.Redis;
 using ServiceStack.Common;
 using ServiceStack.Redis.Generic;
+using System.Configuration;
 
 namespace HowMuchTo.Models
 {
@@ -22,7 +22,7 @@ namespace HowMuchTo.Models
 
         public ActivityRepository()
         {
-            storage = CloudStorageAccount.Parse(RoleEnvironment.GetConfigurationSettingValue("StorageConnectionString"));
+            storage = CloudStorageAccount.Parse(ConfigurationManager.AppSettings["StorageConnectionString"]);
             client = storage.CreateCloudTableClient();
 
             client.CreateTableIfNotExist(TableName);
@@ -44,7 +44,7 @@ namespace HowMuchTo.Models
 
         private IRedisClient GetRedisClient()
         {
-            return new RedisClient(RoleEnvironment.GetConfigurationSettingValue("RedisServerHost"), 6379, RoleEnvironment.GetConfigurationSettingValue("RedisServerAuth"));
+            return null; // new RedisClient(RoleEnvironment.GetConfigurationSettingValue("RedisServerHost"), 6379, RoleEnvironment.GetConfigurationSettingValue("RedisServerAuth"));
         }
 
         public void Add(Activity value)

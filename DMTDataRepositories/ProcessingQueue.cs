@@ -5,7 +5,7 @@ using System.Web;
 using System.Runtime.Serialization.Formatters.Binary;
 using Microsoft.WindowsAzure.StorageClient;
 using Microsoft.WindowsAzure;
-using Microsoft.WindowsAzure.ServiceRuntime;
+using System.Configuration;
 
 namespace HowMuchTo.ProcessingQueue
 {
@@ -21,8 +21,8 @@ namespace HowMuchTo.ProcessingQueue
         public ProcessingQueue()
         {
             _formatter = new BinaryFormatter();
-
-            storageAccount = CloudStorageAccount.Parse(RoleEnvironment.GetConfigurationSettingValue("StorageConnectionString"));
+            
+            storageAccount = CloudStorageAccount.Parse(ConfigurationManager.AppSettings["StorageConnectionString"]);
             queueClient = storageAccount.CreateCloudQueueClient();
             queue = queueClient.GetQueueReference(TableName);
             queue.CreateIfNotExist();

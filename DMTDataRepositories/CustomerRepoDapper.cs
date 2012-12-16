@@ -7,7 +7,6 @@ using System.Data.SqlClient;
 using System.Configuration;
 using Dapper;
 using Microsoft.WindowsAzure;
-using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.WindowsAzure.StorageClient;
 using System.Data.Services.Client;
 
@@ -27,7 +26,7 @@ namespace HowMuchTo.Models
         {
             connStr = ConfigurationManager.ConnectionStrings["DMTPrimary"].ConnectionString;
 
-            storage = CloudStorageAccount.Parse(RoleEnvironment.GetConfigurationSettingValue("StorageConnectionString"));
+            storage = CloudStorageAccount.Parse(ConfigurationManager.AppSettings["StorageConnectionString"]);
             client = storage.CreateCloudTableClient();
             client.CreateTableIfNotExist(TableName);
             context = new TableServiceContextV2(client.BaseUri.ToString(), client.Credentials);

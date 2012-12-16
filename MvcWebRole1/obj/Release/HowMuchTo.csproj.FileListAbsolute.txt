@@ -21,10 +21,7 @@ C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\System.Web.WebP
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\System.Web.WebPages.dll
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\System.Web.WebPages.Razor.dll
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\ServiceStack.Interfaces.dll
-C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\ServiceStack.Redis.dll
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\CodeScales.Http.dll
-C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\ServiceStack.Common.dll
-C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\ServiceStack.Text.dll
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\HMTDataRepositories.pdb
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\Microsoft.WindowsAzure.StorageClient.xml
@@ -41,10 +38,5 @@ C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\System.Web.WebP
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\System.Web.WebPages.Razor.xml
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\ServiceStack.Interfaces.xml
-C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\ServiceStack.Redis.xml
-C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\ServiceStack.Common.xml
-C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\ServiceStack.Text.xml
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\obj\Release\DareyaAPI.dll
 C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\obj\Release\DareyaAPI.pdb
-C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
-C:\Users\Marc\Documents\GitHub\howmuchto-service\MvcWebRole1\bin\Microsoft.WindowsAzure.ServiceRuntime.xml

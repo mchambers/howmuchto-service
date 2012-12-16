@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Microsoft.WindowsAzure;
-using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.WindowsAzure.StorageClient;
 using System.Data.Services.Client;
+using System.Configuration;
 
 namespace HowMuchTo.Models
 {
@@ -19,7 +19,7 @@ namespace HowMuchTo.Models
 
         public FriendshipRepository()
         {
-            storage = CloudStorageAccount.Parse(RoleEnvironment.GetConfigurationSettingValue("StorageConnectionString"));
+            storage = CloudStorageAccount.Parse(ConfigurationManager.AppSettings["StorageConnectionString"]);
             client = storage.CreateCloudTableClient();
             client.CreateTableIfNotExist(TableName);
             context = client.GetDataServiceContext();

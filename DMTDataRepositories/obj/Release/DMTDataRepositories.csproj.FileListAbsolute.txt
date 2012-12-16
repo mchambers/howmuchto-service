@@ -23,3 +23,4 @@ C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Release
 C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\bin\Release\ServiceStack.Text.xml
 C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\obj\Release\HMTDataRepositories.dll
 C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\obj\Release\HMTDataRepositories.pdb
+C:\Users\Marc\Documents\GitHub\howmuchto-service\DMTDataRepositories\obj\Release\DMTDataRepositories.csprojResolveAssemblyReference.cache
